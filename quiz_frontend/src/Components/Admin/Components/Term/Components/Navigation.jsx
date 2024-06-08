@@ -5,9 +5,10 @@ import SchoolIcon from '@mui/icons-material/School';
 import LoginIcon from '@mui/icons-material/Login';
 import { TermContext } from '../Term';
 import { v4 } from 'uuid';
+import { FaVideo } from 'react-icons/fa';
 
 const Navigation = (props) => {
-    const array_list= useMemo(()=> [{link: "flashcards", text: "Flashcards", icon: <ContentCopyIcon style={{color: "#2e89ff",}}></ContentCopyIcon>}, {link: "learn", text: "Learn", icon: <SchoolIcon style={{color: "#2e89ff",}}></SchoolIcon>}, {link: `test?id_test=${v4()}`, text: "Test", icon: <LoginIcon style={{color: "#2e89ff",}}></LoginIcon>}], [])
+    const array_list= useMemo(()=> [{link: "flashcards", text: "Flashcards", icon: <ContentCopyIcon style={{color: "#2e89ff",}}></ContentCopyIcon>}, {link: "learn", text: "Learn", icon: <SchoolIcon style={{color: "#2e89ff",}}></SchoolIcon>}, {link: `test?id_test=${v4()}`, text: "Test", icon: <LoginIcon style={{color: "#2e89ff",}}></LoginIcon>}, {link: `video`, text: "Video", icon: <FaVideo style={{color: "#2e89ff",}}></FaVideo>}], [])
     return (
         <div className="navigation-term">
             <div className="ol-921">Learn</div>

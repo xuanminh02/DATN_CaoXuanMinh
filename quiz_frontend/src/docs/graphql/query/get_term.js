@@ -10,6 +10,7 @@ const GET_TERM= gql`
             id_term,
             visible,
             editable,
+            video,
             list_question {
                 id_question,
                 question,

@@ -22,6 +22,7 @@ import TitleTerm from "./Components/TitleTerm";
 import "./style.sass";
 import { AiOutlineGoogle, AiFillFacebook } from "react-icons/ai";
 import NotFound404 from "../../../NotFound/NotFound404";
+import Video from "./Components/Video";
 
 export const TermContext = createContext();
 const Term = (props) => {
@@ -80,6 +81,10 @@ const Term = (props) => {
                         path="/test"
                         element={<Test {...data}></Test>}
                       ></Route>
+                      <Route
+                        path="/video"
+                        element={<Video {...data}></Video>}
+                      ></Route>
                     </Fragment>
                   )}
 
@@ -135,6 +140,7 @@ const Term = (props) => {
                   element={<Learn {...data}></Learn>}
                 ></Route>
                 <Route path="/test" element={<Test {...data}></Test>}></Route>
+                <Route path="/video" element={<Video {...data}></Video>}></Route>
               </Fragment>
             </Routes>
           </div>
@@ -145,8 +151,8 @@ const Term = (props) => {
 };
 
 const W1 = (props) => {
-  const { data } = useContext(TermContext);
-  const { auth } = useContext(UserContext);
+    const { data } = useContext(TermContext);
+    const { auth } = useContext(UserContext);
   return (
     <Fragment>
       <TitleTerm
@@ -166,7 +172,7 @@ const W1 = (props) => {
 
 export default Term;
 
-const ListNoLogin = (props) => {
+export const ListNoLogin = (props) => {
   return (
     <div className="jjsakljsaklreaoiraw" style={{ width: "100%" }}>
       {props?.list_question

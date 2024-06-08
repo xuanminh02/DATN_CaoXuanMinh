@@ -41,7 +41,7 @@ export const resolvers= {
             const [rows3]= await connection.execute("SELECT uid, photoURL, displayName FROM user INNER JOIN term ON user.uid = term.own_id WHERE term.id_term=?", [args?.id_term])
             const [rowsxx]= await connection.execute("INSERT INTO user_learn_term VALUES(?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE id_user=VALUES(id_user), id_term= VALUES(id_term), current_question= VALUES(current_question), time_created= VALUES(time_created), own_id= VALUES(own_id)", [args?.uid, args?.id_term, 1, moment(new Date()).format("DD/MM/YYYY"), rows3[0].own_id || ""])
 
-            const [rows]= await connection.execute("SELECT title, description, visible, editable, current_question, term.id_term AS id_term, (SELECT COUNT(id_question) FROM question_of_term WHERE id_term=?) AS count_question FROM term INNER JOIN user_learn_term ON term.id_term = user_learn_term.id_term WHERE user_learn_term.id_user=? AND term.id_term=?", [ args?.id_term ,args?.uid, args?.id_term])
+            const [rows]= await connection.execute("SELECT title, description, visible, editable, video, current_question, term.id_term AS id_term, (SELECT COUNT(id_question) FROM question_of_term WHERE id_term=?) AS count_question FROM term INNER JOIN user_learn_term ON term.id_term = user_learn_term.id_term WHERE user_learn_term.id_user=? AND term.id_term=?", [ args?.id_term ,args?.uid, args?.id_term])
             const [rows2]= await connection.execute("SELECT question, answer, id_question from question_of_term WHERE id_term=?", [args?.id_term])
             if(rows2) {
                 rows[0].list_question= rows2 || []

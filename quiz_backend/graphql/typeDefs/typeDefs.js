@@ -101,7 +101,8 @@ export const typeDefs = gql`
         list_question: [Question],
         author: User,
         visible: Int,
-        editable: Int
+        editable: Int,
+        video: String
         
     }
     type Question {
@@ -139,7 +140,8 @@ export const typeDefs = gql`
         count_question: Int,
         author_id: String, 
         author_displayName: String,
-        author_photoURL: String
+        author_photoURL: String,
+        video: String
     }
     type PerfromRequestJoinClass {
         is_deny: Boolean,

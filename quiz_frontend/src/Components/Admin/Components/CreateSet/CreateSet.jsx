@@ -57,7 +57,7 @@ const CreateSet = (props) => {
             q={q}
             i={i}
             setQ={setQ}
-          ></CreateComponentTerm>
+          />
         </div>
       </div>
     </>

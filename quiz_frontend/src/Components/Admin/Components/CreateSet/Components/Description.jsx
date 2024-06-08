@@ -5,6 +5,7 @@ const Description = (props) => {
     <div className={"description-create-set"}>
         <TitleTerm setI={props?.setI}></TitleTerm>
         <DescriptionTerm setI={props?.setI}></DescriptionTerm>
+        <VideoTerm setI={props?.setI} />
     </div>
   )
 }
@@ -26,6 +27,17 @@ const DescriptionTerm= (props)=> {
             <input onChange={(e)=> props?.setI(prev=> ({...prev, description: e.target.value}))} type="text" className="inp-description-term-create-set" placeholder="Enter description..." />
             <div className="mean-above">
                 Description
+            </div>
+        </div>
+    )
+}
+
+const VideoTerm= (props)=> {
+    return (
+        <div className={"description-term-create-set"}>
+            <input onChange={(e)=> props?.setI(prev=> ({...prev, video: e.target.value}))} type="text" className="inp-description-term-create-set" placeholder="Enter video..." />
+            <div className="mean-above">
+                Video 
             </div>
         </div>
     )
