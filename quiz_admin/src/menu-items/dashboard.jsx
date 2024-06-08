@@ -9,26 +9,18 @@ const icons = {
 // ==============================|| MENU ITEMS - DASHBOARD ||============================== //
 
 const dashboard = {
-  id: 'group-dashboard',
+  id: 'user',
   title: '',
   type: 'group',
   children: [
     {
       id: 'dashboard',
-      title: 'Quản lý vòng cược',
+      title: 'Quản lý người dùng',
       type: 'item',
-      url: '/dashboard/default',
+      url: 'user',
       icon: icons.DashboardOutlined,
       breadcrumbs: false
     },
-    {
-      id: 'dashboard2',
-      title: 'Quản lý xổ số',
-      type: 'item',
-      url: '/dashboard/lottery',
-      icon: icons.DashboardOutlined,
-      breadcrumbs: false
-    }
   ]
 };
 

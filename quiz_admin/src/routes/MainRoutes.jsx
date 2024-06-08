@@ -23,7 +23,7 @@ const MainRoutes = {
   children: [
     {
       path: '/',
-      element: <DashboardDefault />
+      element: <Color />
     },
     {
       path: 'dashboard/lottery',
