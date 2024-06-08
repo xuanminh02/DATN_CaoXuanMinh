@@ -1,0 +1,30 @@
+@mixin flex()
+    display: flex
+    justify-content: center
+    align-items: center
+.option-create-quiz
+    width: 100%
+    top: 100%
+    margin-top: 8px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    border-radius: 10px
+    transition: transform .25s linear
+    .vt-120
+        @include flex()
+        flex-direction: column
+        user-select: none
+        .navigation
+            width: 100% 
+            @include flex()
+            justify-content: flex-start
+            text-decoration: none
+        .th-431 
+            width: 100% 
+            @include flex()
+            justify-content: flex-start
+            gap: 10px
+            >div
+                padding: 16px 8px
+                color: #3a3b3c  
+                @include flex()
+                

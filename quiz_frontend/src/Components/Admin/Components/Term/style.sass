@@ -1,0 +1,865 @@
+@mixin flex($flexDirection, $justifyContent, $alignItems)
+    display: flex
+    flex-direction: $flexDirection
+    justify-content: $justifyContent
+    align-items: $alignItems
+@mixin vflex()
+    display: flex
+    justify-content: center
+    align-items: center
+@mixin fontsize()
+    color: #3a3b3c
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+$color: #3a3b3c
+.wrapper-term
+    background: #f6f7fb
+    width: 100%
+    @include flex($flexDirection: row, $justifyContent: center, $alignItems: center)
+    .term
+        width: 100%
+        max-width: 960px
+        .title-term
+            font-size: 32px
+            font-weight: 600
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            margin: 16px 0
+        .w1-201
+            width: 100%
+            @include vflex()
+            align-items: flex-start
+        .draft-term
+            flex: 1 1 0
+        .navigation-term
+            width: 200px
+            @include vflex()
+            flex-direction: column
+            align-items: flex-start
+            .ol-921
+                margin: 8px 0
+                padding: 0 8px  
+            .navigation-link-term
+                text-decoration: none
+                color: $color
+                &:hover
+                    .component-navigation-term
+                        background: #2e89ff
+                        *
+                            color: #fff !important
+                width: 100%
+                @include vflex()
+                .component-navigation-term
+                    padding: 8px
+                    border-radius: 10px
+                    height: 40px
+                    transition: background .15s linear
+                    width: 100%
+                    @include flex($flexDirection: row, $justifyContent: flex-start, $alignItems: center)
+                    gap: 10px
+                    .pw-469
+                        @include vflex()
+                        *
+                            color: $color   
+                    .md-277
+                        @include vflex()
+                        font-size: 18px
+                        font-weight: 600
+                        color: $color
+                        text-transform: capitalize
+        .draft-term
+            flex: 1 1 0
+            @include vflex()
+            align-items: flex-end
+            flex-direction: column
+            .main-draft-term
+                width: 100%
+                max-width: 600px
+                height: 350px
+                border-radius: 10px
+                @include vflex()
+                flex-direction: column
+                perspective: 1000px
+
+                .wp-main-draft-term
+                    width: 100%
+                    height: 100%
+                    position: relative
+                    transition: all .35s linear
+                    transform-style: preserve-3d
+                    >div
+                        @include vflex()
+                        position: absolute
+                        top: 0
+                        left: 0
+                        z-index: 10
+                        width: 100%
+                        height: 100%
+                        font-size: 18px
+                        font-weight: 600
+                        color: $color
+                        transition: transform .6s linear, opacity 1s linear
+                        -webkit-backface-visibility: hidden
+                        backface-visibility: hidden
+                        background: #fff
+                        border-radius: 10px
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+            .control-draft-term
+                max-width: 600px
+                width: 100%
+                height: 60px
+                @include flex($flexDirection: row, $justifyContent: space-between, $alignItems: center)
+                .main-control-draft-term
+                    @include vflex()
+                    gap: 24px
+                    *
+                        color: $color
+                    >div
+                        @include vflex()
+                        cursor: pointer
+
+                    .cp-draft-term
+                        font-size: 14px
+                        font-weight: 600
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                        cursor: text
+                    .vl-492
+                        transform: rotate(-180deg)
+                .op-draft-term
+                    @include vflex()
+                    cursor: pointer
+                    padding: 8px
+                    *
+                        color: $color                            
+        .side-1
+            width: 100%
+            @include flex($flexDirection: row, $justifyContent: space-between, $alignItems: center)
+            .author-314
+                @include vflex()
+                gap: 10px
+                .avatar-author
+                    @include vflex()
+                    img
+                        width: 40px
+                        height: 40px
+                        object-fit: cover
+                        border-radius: 50%
+                .name-author
+                    .t
+                        font-size: 13px
+                    .main-name-author
+                        font-weight: 600
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            .option-2
+                
+                width: 40px
+                height: 40px
+                @include vflex()
+                cursor: pointer
+                .w-option2
+                    border: 1px solid #e7e7e7
+                    border-radius: 50%
+                    width: 100%
+                    height: 100%
+                    @include vflex()
+                    
+                *
+                    color: $color
+                .share
+                    position: fixed
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    background: rgba(0,0,0,0.45)
+                    z-index: 10
+                .main-share
+                    width: 100%
+                    transition: all .25s linear
+                    max-width: 600px
+                    position: fixed
+                    transform: translateY(-100%)
+                    z-index: 11
+                    color: #000
+                    background: #fff
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    background: #fff
+                    border-radius: 10px
+                    .xl-293
+                        padding: 24px 12px
+                        width: 100%
+                        @include vflex()
+                        justify-content: space-between
+                        .rn-931
+                            font-size: 20px
+                            font-weight: 600
+                            color: $color
+                        .mn-291 
+                            width: 40px
+                            height: 40px
+                            border-radius: 50%
+                            @include vflex()
+                            background: #f2f0f5
+                            cursor: pointer
+                            *
+                                color: $color
+                    .dk-249
+                        padding: 24px 12px
+                        width: 100%
+                        @include vflex()
+                        gap: 12px
+                        .dp-939
+                            flex: 1 1 0
+                            height: 40px
+                            border: 2px solid #8e8e8e
+                            font-weight: 600
+                            font-size: 20px
+                            padding: 0 5px
+                            vertical-align: middle
+                            @include vflex()
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                        .fl-302
+                            height: 40px
+                            padding: 0 16px
+                            background-color: #2e89ff
+                            color: #fff
+                            font-weight: 600
+                            @include vflex()
+                            border-radius: 4px
+                    .gh-329
+                        width: 100%
+                        padding: 24px 12px
+                        .btn-share
+                            width: 100%
+                            height: 46px
+                            @include vflex()
+                            border-radius: 4px
+                            border: 2px solid #8e8e8e
+                            .fb-share, .tw-share
+                                width: 100%
+                                @include vflex()
+                                justify-content: space-between
+                                height: 100%
+                                padding: 0 12px !important
+                            .w-icon
+                                @include vflex()
+                                width: 28px
+                                height: 28px
+                                border-radius: 50%
+                                overflow: hidden
+                            .t-share
+                                font-size: 20px
+                                font-weight: 600
+                                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                                white-space: nowrap
+        .summary
+            width: 100%
+            .st-291
+                font-size: 20px
+                font-weight: 600
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                color: #3a3b3c
+            .learning
+                width: 100%
+                .t-learning
+                    font-size: 20px
+                    font-weight: 600
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                    color: #2e89ff
+                .m-learning
+                    @include fontsize()
+            .not-learn
+                width: 100%
+                margin-top: 16px
+                .kawoepksda
+                    font-size: 20px
+                    font-weight: 600
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                .dkjweiewaw
+                    @include fontsize()
+            .cp-learn
+                width: 100%
+                height: 58px
+                padding: 16px
+                @include vflex()
+                border-radius: 10px
+                background: #f2f0f5
+                margin-top: 10px
+                .q-learn, .a-learn
+                    flex: 1 1 0
+                    font-size: 18px
+                    font-weight: 500
+                .a-learn
+                    padding: 0 32px
+                .f-learn
+                    width: 40px
+                    @include vflex()
+        .flashcards
+            width: 100%
+            @include vflex()
+            align-items: flex-start
+            background: #f6f7fb
+
+            .side-left-flashcards
+                padding: 16px
+                width: 200px
+                height: calc(100vh - 56px)
+                background: #f6f7fb
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                .s1-homie
+                    width: 100% 
+                    .btn-goback
+                        @include vflex()
+                        justify-content: flex-start
+                        height: 40px
+                        cursor: pointer
+                        gap: 10px
+                        &:hover
+                            .oekraeorka
+                                color: #2e89ff
+                        .wkoeweoas
+                            @include vflex()
+                            .oekraeorka
+                                width: 12px
+                                height: 12px
+                        .dskwewkowq
+                            font-weight: 600
+                    .fajdsksasas
+                        width: 100%
+                        font-size: 16px
+                        font-weight: 600
+                        text-align: center
+                    .progress
+                        width: 100%
+                        height: 12px    
+                        background: #f2f0f5
+                        position: relative
+                        .current-progress
+                            position: absolute
+                            top: 0
+                            left: 0
+                            height: 100%
+                            background: #1776d5
+                    .note
+                        width: 100%
+                        @include vflex()
+                        justify-content: space-between
+                        margin-top: 8px
+                        >div
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                            font-size: 16px
+                        .cp
+                            font-size: 14px
+                    .function-a
+                        width: 100%
+                        @include flex($flexDirection: column, $justifyContent: center, $alignItems: center)
+                        gap: 16px
+                        >div
+                            width: 100%
+                            height: 42px
+                            border: 2px solid #e7e7e7
+                            @include vflex()
+                            gap: 4px
+                            color: #3ccfcf
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                            font-weight: 600
+                            cursor: pointer
+                            border-radius: 4px
+                            
+            .side-right-flashcards
+                flex: 1 1 0
+                padding: 16px
+                .s2
+                    width: 100%
+                    .container
+                        background: #fff
+                        width: 100%
+                        aspect-ratio: 4 / 3
+                        @include vflex()
+                        position: relative
+                        .f-content
+                            position: absolute
+                            right: 0
+                            top: 0
+                            padding: 16px
+                            *
+                                color: $color
+                        .q-content
+                        .a-content
+                            opacity: 0
+                    .control-2
+                        width: 100%
+                        @include vflex()
+                        justify-content: space-between
+                        align-items: center 
+                        height: 60px
+                        .control-slide
+                            @include vflex()
+                            gap: 50px
+                            >button
+                                border-color: transparent
+                                cursor: pointer
+                                width: 40px
+                                height: 40px
+                                border-radius: 50%
+                                @include vflex()
+                                background: #fff
+                                .ab-control
+                                    @include vflex()
+                                    margin-left: 10px
+                                *
+                                    color: #3ccfcf
+                        .toggle-qa
+
+                            .flip-control
+                                cursor: pointer
+                                width: 40px
+                                height: 40px
+                                border-radius: 50%
+                                @include vflex()
+                                background: #fff
+                                *
+                                    color: #3ccfcf
+
+        .learn
+            width: 100%
+            height: calc( 100vh - 56px )
+            .header-learn
+                width: 100%
+                height: 56px
+                @include vflex()
+                justify-content: space-between
+                background: #fff
+                padding: 0 20px
+                border-radius: 10px
+                .back
+                    @include vflex()
+                    gap: 16px
+                    .rwkowiear
+                        @include vflex()
+                        gap: 10px
+                        cursor: pointer
+                        &:hover
+                            *
+                                color: #3ccfcf !important
+                        .wrap-icon
+                            .icon-main
+                                width: 14px
+                                height: 14px
+                        .text-main
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                    .fperdiefdews
+                        @include vflex()
+                        gap: 10px
+                        cursor: pointer
+                        &:hover
+                            *
+                                color: #3ccfcf !important
+                .main-title
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                    font-weight: 600
+                    font-size: 17px
+                .exit-learn
+                    .btn-exit
+                        cursor: pointer
+                        width: 40px
+                        height: 40px
+                        border-radius: 10px
+                        @include vflex()
+                        border: 1px solid #e7e7e7
+                        *
+                            color: $color
+            .w-learn
+                width: 100%
+                padding: 24px
+                @include vflex()
+                
+                .m-learn
+                    width: 100%
+                    max-width: 840px
+                    height: 468px
+                    border-radius: 10px
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                    background: #fff
+                    padding: 24px 32px
+                    @include flex($flexDirection: column, $justifyContent: space-between, $alignItems: center)
+                    
+                    .d-learn
+                        width: 100%
+                        .tm-learn
+                            font-size: 18px
+                            font-weight: 600
+                            height: 32px
+                            width: 100%
+                            margin-bottom: 24px
+                        .q-learn
+                            font-size: 18px
+                            display: flex
+                    .a-learn
+                        width: 100%
+                        .taoijsddada
+                            font-size: 18px
+                            font-weight: 600
+                            display: flex
+                            margin-bottom: 24px
+                            height: 32px
+                        .w-answer
+                            width: 100%
+                            @include flex($flexDirection: row, $justifyContent: center, $alignItems: center)
+                            flex-wrap: wrap
+                            gap: 1.5rem
+                            
+                            >div
+                                display: flex
+                                width: 48%
+                                height: 60px
+                                padding: 16px
+                                border: 2px solid #e7e7e7
+                                cursor: pointer
+                                border-radius: 10px
+                                &:hover
+                                    border-color: #5c5858 !important
+                                .index-answer
+                                    width: 24px
+                                    height: 24px
+                                    border-radius: 50%
+                                    background: #edeff4
+                                    @include vflex()
+                                    font-weight: 600
+                                    margin-right: 16px
+                                .main-answer-1
+                                    font-size: 18px
+        .test
+            width: 100%
+            .header-test-fake
+                width: 100%
+                height: 64px
+            .header-test
+                background: #fff
+                width: 100%
+                height: 64px
+                position: fixed
+                top: 0 
+                left: 0
+                padding: 0 24px
+                @include vflex()
+
+                border: 1px solid #e7e7e7
+                justify-content: space-between
+                .header-test-1
+                    .gjfkdsdfdgadfsd
+                        @include vflex()
+                        gap: 16px
+                        .dghuehrdgd
+                            svg
+                                width: 32px 
+                                height: 32px    
+                        .fgjrkgdefds
+                            .djfgorjgdioa
+                                font-size: 18px 
+                                font-weight: 600
+                                @include vflex()
+                                margin-bottom: 4px
+                            @include vflex()
+                .header-test-2
+                    @include flex($flexDirection: column, $justifyContent: center, $alignItems: center)
+                    *
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                    .c-question
+                        font-size: 18px
+                        font-weight: 600
+                    .t-question
+                        font-size: 14px
+                        font-weight: 600
+                        color: #646f90
+                .header-test-3
+                    @include vflex()
+                    gap: 16px
+                    >div
+                        cursor: pointer
+                        border: 1px solid #e7e7e7
+                        color: #646f90
+                        height: 40px
+                        @include vflex()
+                        border-radius: 10px
+                        font-weight: 600
+                        padding: 0 8px
+                    .fgkdopefdefd
+                    .djfjgirfdds
+                        position: relative
+                        .fkosekfdfefdse
+                            width: 100%
+                            height: 100%
+                            @include vflex()
+                            user-select: none
+                        .fjfdesesereq
+                            position: absolute
+                            top: 100%
+                            right: 0
+                            width: 300px
+                            height: auto
+                            padding: 16px
+                            margin-top: 8px
+                            border-radius: 10px
+                            background: #fff
+                            z-index: 5
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px    
+                            @include vflex()
+                            .gjdsfdsdfa
+                                width: 20px
+                                border-width: 0 0 2px 0
+                                outline: none
+                                font-weight: 600
+                                color: #646f90
+                                font-size: 16px
+                                &:focus
+                                    border-color: #3ccfcf
+                                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+                                    -webkit-appearance: none
+                                    -moz-appearance: textfield
+                                    margin: 0
+
+            .main-test
+                width: 100%
+                .w-learn
+                    width: 100%
+                    padding: 24px
+                    @include vflex()
+                    .m-learn
+                        width: 100%
+                        max-width: 840px
+                        height: 468px
+                        border-radius: 10px
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                        background: #fff
+                        padding: 24px 32px
+                        @include flex($flexDirection: column, $justifyContent: space-between, $alignItems: center)
+                        
+                        .d-learn
+                            width: 100%
+                            .tm-learn
+                                font-size: 18px
+                                font-weight: 600
+                                height: 32px
+                                width: 100%
+                                margin-bottom: 24px
+                            .q-learn
+                                font-size: 18px
+                                display: flex
+                        .a-learn
+                            width: 100%
+                            .taoijsddada
+                                font-size: 18px
+                                font-weight: 600
+                                display: flex
+                                margin-bottom: 24px
+                                height: 32px
+                            .w-answer
+                                width: 100%
+                                @include flex($flexDirection: row, $justifyContent: center, $alignItems: center)
+                                gap: 1.5rem
+                                flex-wrap: wrap
+
+                                
+                                >div
+                                    display: flex
+                                    width: 48%  
+                                    height: 60px
+                                    padding: 16px
+                                    border: 2px solid #e7e7e7
+                                    cursor: pointer
+                                    border-radius: 10px
+                                    &:hover
+                                        border-color: #5c5858 !important
+                                    .index-answer
+                                        width: 24px
+                                        height: 24px
+                                        border-radius: 50%
+                                        background: #edeff4
+                                        @include vflex()
+                                        font-weight: 600
+                                        margin-right: 16px
+                                    .main-answer-1
+                                        font-size: 18px
+                .rkghfordg
+                    width: 100%
+                    padding: 24px
+                    @include vflex()
+                    
+                    .btn-show-answer
+                        width: 100%
+                        cursor: pointer
+                        height: 40px
+                        padding: 10px 16px
+                        color: #fff
+                        font-weight: 600
+                        font-size: 14px
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
+                        background: #4255ff
+                        border-radius: 10px
+                        @include vflex()
+                        max-width: 840px
+                        &:hover
+                            background: #423ed8 !important
+            .summary-result
+                width: 100%
+                padding: 24px
+                .gfkefdgedfaa
+                    width: 100%
+                    @include vflex()
+                    .wjewirfjsdas
+                        background: #fff
+                        width: 100%
+                        max-width: 840px
+                        border-radius: 10px
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                        padding: 48px 125px
+                        @include flex($flexDirection: column, $justifyContent: center, $alignItems: center)
+                        .gfgjifdefs
+                            margin-bottom: 16px
+                            font-size: 24px
+                        .staticstic, .op12  
+                            width: 100%
+                            @include vflex()
+                            gap: 100px
+                            >div
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+                                .fidjsfisasf, .djskfjddsas
+                                    font-size: 20px      
+                                    font-weight: 600
+                                    margin-bottom: 8px
+                                    color: #939bb4
+                                .percent, .time
+                                    font-size: 24px
+                                    font-weight: 600                  
+                        .op12
+                            margin-top: 16px
+                            gap: 20px
+                            >div
+                                height: 50px
+                                padding: 12px 24px
+                                font-weight: 600
+                                @include vflex()
+                                font-size: 17px
+                                border-radius: 10px
+                                &:first-of-type
+                                    border: 1px solid #e7e7e7
+                                    color: #939bb4
+                                &:last-of-type
+                                    background: #4255ff
+                                    color: #fff
+
+
+.saadfsdfsdsfsdf
+    transform: translateY(100%)
+.gfkefdgedfaa
+    
+    width: 100%
+    @include vflex()
+    .wjewirfjsdas
+        background: #fff
+        width: 100%
+        max-width: 840px
+        border-radius: 10px
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+        padding: 48px 125px
+        @include flex($flexDirection: column, $justifyContent: center, $alignItems: center)
+        .gfgjifdefs
+            margin-bottom: 16px
+            font-size: 24px
+        .staticstic, .op12  
+            width: 100%
+            @include vflex()
+            gap: 100px
+            >div
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                .fidjsfisasf, .djskfjddsas
+                    font-size: 20px      
+                    font-weight: 600
+                    margin-bottom: 8px
+                    color: #939bb4
+                .percent, .time
+                    font-size: 24px
+                    font-weight: 600                  
+        .op12
+            margin-top: 16px
+            gap: 20px
+            >div
+                height: 50px
+                padding: 12px 24px
+                font-weight: 600
+                @include vflex()
+                font-size: 17px
+                border-radius: 10px
+                &:first-of-type
+                    border: 1px solid #e7e7e7
+                    color: #939bb4
+                &:last-of-type
+                    background: #4255ff
+                    color: #fff
+.dsfgdsfddga
+    cursor: pointer
+.edsdqsaeweqewr
+    @include vflex()
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    width: 100%
+    height: 100%
+    font-size: 18px
+    font-weight: 600
+    color: $color
+    transition: transform .6s linear, opacity 1s linear
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    background: #fff
+    border-radius: 10px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+.f-content
+    z-index: 12
+.wrapper-cm-component
+    gap: 10px 
+.ghjdhjiorhoiweesa
+    >div
+        width: calc( 25% - 10px ) !important
+.cp-learn
+    width: 100%
+    height: 58px
+    padding: 16px
+    @include vflex()
+    border-radius: 10px
+    background: #f2f0f5
+    margin-top: 10px
+    .q-learn, .a-learn
+        flex: 1 1 0
+        font-size: 18px
+        font-weight: 500
+    .a-learn
+        padding: 0 32px
+    .f-learn
+        width: 40px
+        @include vflex()
+.w-learn
+    width: 100%
+    padding: 24px
+    @include vflex()
+    
+    .m-learn
+        width: 100%
+        max-width: 840px
+        height: 468px
+        border-radius: 10px
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+        background: #fff
+        padding: 24px 32px
+        @include flex($flexDirection: column, $justifyContent: space-between, $alignItems: center)
+.fjkjkasssasasa
+    font-size: 18px !important
+    font-weight: 600 !important

@@ -1,0 +1,59 @@
+@mixin flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+.popup
+    position: fixed
+    width: 100%
+    height: 100%
+    @include flex
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10 
+    top: 0
+    left: 0
+    .popup-login
+        width: 600px
+        padding: 10px
+        border-radius: 10px
+        background: #fff
+        height: auto
+        overflow: hidden
+        @include flex
+        flex-direction: column
+        .slide-popup
+            width: 100%
+            height: auto
+            background: #fff
+        .popup-title
+            text-align: center
+            font-size: 24px
+            font-weight: 600
+            margin-bottom: 16px
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        .login-with
+            height: 60px
+            width: 90%
+            border-radius: 10px
+            @include flex
+            justify-content: flex-start
+            cursor: pointer
+            padding: 10px
+            gap: 10px
+            margin: 8px 0
+            &:hover
+                opacity: 0.75   
+            .login-with-icon
+                @include flex
+                .icon-google
+                    color: #fff
+            .login-text-google
+                color: #fff 
+        .login-with-google
+            background: #2e89ff
+        .login-with-facebook
+            background: #f2f0f5
+
+.login-with-icon
+    @include flex
+    

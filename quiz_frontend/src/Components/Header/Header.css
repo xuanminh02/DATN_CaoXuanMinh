@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  padding: 0 12px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-bottom: 1px solid #e7e7e7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.header-fake {
+  height: 56px;
+  width: 100%;
+}/*# sourceMappingURL=Header.css.map */

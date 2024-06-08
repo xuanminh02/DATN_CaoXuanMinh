@@ -1,0 +1,44 @@
+@mixin flex
+    display: flex
+    justify-content: center
+    align-items: center
+$colorLinkActive: #2e89ff
+.menu-navigation
+    @include flex
+    height: 100%
+    .navigation-component
+        height: 100%
+        padding: 0 16px
+        @include flex
+        font-weight: 600
+        .navigation-link
+            height: 100%
+            height: 56px
+            border-bottom: 4px solid transparent
+            &:hover
+                border-bottom: 4px solid $colorLinkActive
+                *
+                    color: $colorLinkActive
+.navigation-component
+    height: 100%
+    padding: 0 16px
+    @include flex
+    font-weight: 600    
+.navigation-link-active
+    border-bottom: 4px solid $colorLinkActive !important
+    *
+        color: $colorLinkActive
+
+.navigation-link
+    @include flex
+    .navigation-component-icon
+        @include flex
+         
+
+.navigation-component-link
+    text-transform: capitalize
+    font-size: 18px
+    margin-left: 8px
+.extend-navigation-component
+    .navigation-link
+        flex-direction: column              

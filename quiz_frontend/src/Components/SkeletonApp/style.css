@@ -1,0 +1,93 @@
+.skeleton-auth {
+  width: 100%;
+}
+.skeleton-auth .skeleton-main {
+  width: 100%;
+  height: 100%;
+}
+.skeleton-auth .skeleton-auth-header {
+  width: 100%;
+  height: 62px;
+}
+.skeleton-auth .skeleton-auth-main {
+  display: flex;
+  overflow: auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+  padding: 8px 16px;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1340px;
+  flex-direction: column;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .or-952 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1340px;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .or-952 .re-495 {
+  flex: 1 1;
+  max-width: 1340px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .or-952 .tp-204 {
+  overflow: hidden;
+  width: 360px;
+  height: 200px;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: width 0.25s linear;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .it-951 {
+  width: 100%;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .it-951 .ew-459 {
+  width: 200px;
+  height: 30px;
+  margin: 16px 0 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .kc-715 {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+.skeleton-auth .skeleton-auth-main .vl-324 .kc-715 .fe-493 {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+@mixin flex()
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+.search-quiz
+    padding: 10px
+    .title-search-quiz
+        font-size: 24px
+        font-weight: 600
+        color: #3a3b3c
+        margin: 0 5px
+        display: none
+    .main-search-quiz
+        display: none
+        max-width: 500px
+        width: 100%
+        margin-top: 8px
+        input
+            width: 100%
+            height: 40px
+            padding: 10px
+            border-radius: 10px
+            border: none
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px
+            outline-color: #2e89ff
+.decorate-search-quiz
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    @include flex()
+    flex-direction: column
+    .decorate-search-quiz-icon
+        width: 100px
+        height: 100px
+        color: #3a3b3c
+    .decorate-search-quiz-text
+        font-size: 18px
+        color: #3a3b3c
+        font-weight: 600
+        margin-top: 8px
+        text-align: center
+        color: #1c1e21
+        direction: ltr
+        line-height: 1.34
+        font-size: 12px
+        -webkit-font-smoothing: antialiased
+        word-break: normal
+        padding-top: 24px
+        align-items: center
+        flex-direction: column
+        padding-left: 24px
+        padding-right: 24px
+        display: flex
+        padding-bottom: 24px
+        justify-content: center
+        font-family: inherit

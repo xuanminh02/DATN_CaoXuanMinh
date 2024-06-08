@@ -1,0 +1,31 @@
+.slide-enter
+    transform: translateX(0)
+.slide-enter-active
+    transform: translateX(-100%)
+    transition: transform 0.5s linear
+.slide-exit
+    transform: translateX(-100%)
+.slide-exit-active
+    transform: translateX(0)
+    transition: transform 0.5s linear
+.item-term-enter
+    opacity: 0
+    &:active
+        opacity: 1
+        transition: opacity 500ms ease-in
+
+.item-term-exit
+    opacity: 1
+    &:active
+        opacity: 0
+        transition: opacity 500ms ease-in
+.open-bot-enter
+    transform: scale(0)
+.open-bot-enter-active
+    transform: scale(1)
+    transition: transform 200ms
+.open-bot-exit
+    transform: scale(1)
+.open-bot-exit-active
+    transform: scale(0)
+    transition: transform 200ms

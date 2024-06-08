@@ -1,0 +1,422 @@
+.wrapper-create-set {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-create-set .create-set {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.wrapper-create-set .create-set .title-create-set {
+  margin-top: 8px;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-create-set .create-set .title-create-set .name-title-create-set {
+  font-weight: 600;
+  font-size: 20px;
+  color: #3a3b3c;
+}
+.wrapper-create-set .create-set .title-create-set .btn-create-set {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e89ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 10px;
+}
+.wrapper-create-set .create-set .description-create-set {
+  width: 100%;
+}
+.wrapper-create-set .create-set .description-create-set > div {
+  width: 50%;
+}
+.wrapper-create-set .create-set .description-create-set > div input {
+  border-width: 0 0 2px;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 0;
+  outline: 0;
+}
+.wrapper-create-set .create-set .description-create-set > div input:focus {
+  border-color: #2e89ff;
+  border-width: 0 0 4px;
+}
+.wrapper-create-set .create-set .description-create-set > div .mean-above {
+  margin-top: 8px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .ws-permission {
+  width: 100%;
+  padding: 16px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .ws-permission .s-permission {
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  height: 56px;
+  background: #2e89ff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .change-permission-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .change-permission-title .kd-394 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3a3b3c;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .change-permission-title .do-192 {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f2f0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .change-permission-title .do-192 * {
+  color: #3a3b3c;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission > div {
+  flex: 1 1 0;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission .c-change-permission .ow-123 {
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 26px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission .c-change-permission .wo-425 {
+  width: 100%;
+  height: 40px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission .c-change-permission .wo-425 .pl-301 {
+  height: 100%;
+  width: 100%;
+  outline-color: #2e89ff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission .c-change-permission .wo-425 .pl-301 option {
+  cursor: pointer;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .w-change-permission .change-permission .wc-change-permission .c-change-permission .kx-284 {
+  margin-top: 8px;
+  height: 40px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .permission-create-set {
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin: 12px 0;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .permission-create-set .fw-424 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .permission-create-set .fw-424 .ri-647 {
+  color: #3a3b3c;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .permission-create-set .oe-234 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid #e7e7e7;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.wrapper-create-set .create-set .wrapper-permission-create-set .permission-create-set .ks-492 {
+  font-weight: 700;
+  color: #2e89ff;
+  cursor: pointer;
+  font-size: 18px;
+}
+.wrapper-create-set .create-set .we-524 {
+  width: 100%;
+  padding: 0 12px;
+}
+.wrapper-create-set .create-set .we-524 .pa-302 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.wrapper-create-set .create-set .we-524 .pa-302 .th-182 {
+  margin: 16px 0;
+  cursor: pointer;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #2e89ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.wrapper-create-set .create-set .we-524 .la-453 {
+  margin: 24px 0;
+  background: #f2f0f5;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: auto;
+}
+.wrapper-create-set .create-set .we-524 .la-453 .or-495 {
+  width: 100%;
+}
+.wrapper-create-set .create-set .we-524 .la-453 .or-495 .tl-329 {
+  width: 100%;
+  height: 62px;
+  border-bottom: 2px solid #767676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.wrapper-create-set .create-set .we-524 .la-453 .or-495 .tl-329 .pe-425 {
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3a3b3c;
+}
+.wrapper-create-set .create-set .we-524 .la-453 .or-495 .tl-329 .qw-104 {
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-create-set .create-set .we-524 .la-453 .or-495 .tl-329 .qw-104 * {
+  cursor: pointer;
+  color: #3a3b3c;
+}
+.wrapper-create-set .create-set .we-524 .jf-583 {
+  gap: 40px;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.wrapper-create-set .create-set .we-524 .jf-583 > div {
+  flex: 1 1 0;
+  padding: 12px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.wrapper-create-set .create-set .we-524 .jf-583 > div > div {
+  box-sizing: border-box;
+  min-height: 24px;
+  word-break: break-all;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  border-bottom: 2px solid #767676;
+  font-size: 18px;
+  padding: 8px 0;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+.wrapper-create-set .create-set .we-524 .jf-583 > div > div:focus {
+  border-color: #2e89ff;
+  border-bottom-width: 4px;
+}
+.wrapper-create-set .create-set .we-524 .jf-583 > div .id-495 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  margin-top: 8px;
+}
+.wrapper-create-set .create-set .we-524 .ods-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 12px;
+}
+.wrapper-create-set .create-set .we-524 .ods-404 .ow-415 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 16px;
+}
+.wrapper-create-set .create-set .we-524 .ods-404 .la-451 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 4px solid #2e89ff;
+  cursor: pointer;
+}
+.wrapper-create-set .create-set .we-524 .ods-404 .la-451 * {
+  color: #3a3b3c;
+}
+
+.tr-432 {
+  transition: border-bottom 0.122s linear;
+}
+
+.w-change-permission {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.w-change-permission .change-permission {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.w-change-permission .change-permission .ws-permission {
+  width: 100%;
+  padding: 16px;
+}
+.w-change-permission .change-permission .ws-permission .s-permission {
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  height: 56px;
+  background: #2e89ff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.w-change-permission .change-permission .change-permission-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.w-change-permission .change-permission .change-permission-title .kd-394 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3a3b3c;
+}
+.w-change-permission .change-permission .change-permission-title .do-192 {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f2f0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.w-change-permission .change-permission .change-permission-title .do-192 * {
+  color: #3a3b3c;
+}
+.w-change-permission .change-permission .wc-change-permission {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.w-change-permission .change-permission .wc-change-permission > div {
+  flex: 1 1 0;
+}
+.w-change-permission .change-permission .wc-change-permission .c-change-permission .ow-123 {
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 26px;
+}
+.w-change-permission .change-permission .wc-change-permission .c-change-permission .wo-425 {
+  width: 100%;
+  height: 40px;
+}
+.w-change-permission .change-permission .wc-change-permission .c-change-permission .wo-425 .pl-301 {
+  height: 100%;
+  width: 100%;
+  outline-color: #2e89ff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.w-change-permission .change-permission .wc-change-permission .c-change-permission .wo-425 .pl-301 option {
+  cursor: pointer;
+}
+.w-change-permission .change-permission .wc-change-permission .c-change-permission .kx-284 {
+  margin-top: 8px;
+  height: 40px;
+}/*# sourceMappingURL=style.css.map */

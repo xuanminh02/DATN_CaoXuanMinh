@@ -1,0 +1,113 @@
+.create-class {
+  width: 100%;
+  padding: 40px 24px;
+}
+.create-class .join-class {
+  width: 100%;
+  padding: 10px;
+  background: #f2f0f5;
+  border-radius: 10px;
+  margin-top: 32px;
+}
+.create-class .join-class .title-join-class {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  margin: 16px 0;
+}
+.create-class .join-class .search-class {
+  width: 100%;
+}
+.create-class .join-class .search-class input {
+  max-width: 300px;
+  width: 100%;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  padding: 4px 0;
+  padding: 8px;
+  border-radius: 3px;
+}
+.create-class .join-class .search-class input:focus {
+  border-bottom: 4px solid #2e89ff;
+}
+.create-class .join-class .search-class .gjgfsdgfdgddsfd {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  color: #939bb4;
+}
+.create-class .join-class .add-class {
+  width: 100%;
+  margin: 16px 0;
+}
+.create-class .join-class .add-class .fbsfdkesofwsa {
+  font-weight: 600;
+  color: orange;
+  cursor: pointer;
+}
+.create-class .join-class .add-class .fbsfdkesofwsa:hover {
+  color: #2e89ff;
+}
+.create-class .fsjdiawsisfjraw {
+  width: 100%;
+  border-radius: 10px;
+  background: #f2f0f5;
+  padding: 10px;
+}
+.create-class .fsjdiawsisfjraw .title-join-class {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  margin: 16px 0;
+}
+.create-class .fsjdiawsisfjraw .inp-12 input {
+  padding: 8px !important;
+  border-radius: 3px;
+  max-width: 300px;
+  width: 100%;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  padding: 4px 0;
+}
+.create-class .fsjdiawsisfjraw .inp-12 input:focus {
+  border-bottom: 4px solid #2e89ff;
+}
+.create-class .fsjdiawsisfjraw .inp-12 .fdefdkgsefda {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  margin-bottom: 16px;
+}
+.create-class .fsjdiawsisfjraw .create-class {
+  height: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px 40px;
+  color: #fff;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  border-radius: 10px;
+  background: #2e89ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.create-class .fsjdiawsisfjraw .create-class:hover {
+  opacity: 0.6;
+}
+
+.wrapper-permission-of-class {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.wrapper-permission-of-class .rule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

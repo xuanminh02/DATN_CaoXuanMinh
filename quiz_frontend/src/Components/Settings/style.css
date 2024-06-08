@@ -1,0 +1,11 @@
+.settings {
+  padding: 10px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.settings .setting-title {
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
